@@ -1,8 +1,9 @@
 <script lang="ts">
     import { page } from '$app/stores';
+    import type { CosmicObject } from '$lib/models';
     const id = $page.params.id;
 
-    export let data: { object: { id: string, name: string, type: string } };
+    export let data: { object: CosmicObject };
 </script>
 
 <h1>Read or Update cosmic object</h1>

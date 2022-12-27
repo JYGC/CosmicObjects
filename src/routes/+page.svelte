@@ -6,7 +6,8 @@
 </style>
 
 <script lang="ts">
-    export let data: { objects: [{ id: string, name: string, type: string }] };
+    import type { CosmicObject } from '$lib/models';
+    export let data: { objects: CosmicObject[] };
 </script>
 
 <h1>Cosmic Objects</h1>
