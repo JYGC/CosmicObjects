@@ -6,7 +6,7 @@
 </style>
 
 <script lang="ts">
-    import type { CosmicObject } from '$lib/models';
+    import type { CosmicObject } from '$lib/schemas';
     export let data: { objects: CosmicObject[] };
 </script>
 

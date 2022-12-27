@@ -1,6 +1,6 @@
 <script lang="ts">
     import { page } from '$app/stores';
-    import type { CosmicObject } from '$lib/models';
+    import type { CosmicObject } from '$lib/schemas';
     const id = $page.params.id;
 
     export let data: { object: CosmicObject };
