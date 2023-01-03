@@ -3,6 +3,10 @@
     thead td {
         font-weight: bold;
     }
+
+    td {
+        padding-bottom: 15px;
+    }
 </style>
 
 <script lang="ts">
@@ -11,15 +15,15 @@
 </script>
 
 <h1>Cosmic Objects</h1>
-<a href="/create">Create new object</a>
+<a class="btn" href="/create">Create new object</a>
 {#if data.objects !== undefined && data.objects.length > 0}
     <table>
         <thead>
             <tr>
-                <td>Name</td>
-                <td>Type</td>
-                <td></td>
-                <td></td>
+                <th>Name</th>
+                <th>Type</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -28,7 +32,7 @@
                     <td>{name}</td>
                     <td>{type}</td>
                     <td>
-                        <a class="btn" href="/update/{id}">Update</a>
+                        <a class="btn" href="/update/{id}">View</a>
                     </td>
                     <td>
                         <a class="btn" href="/delete/{id}">Delete</a>
