@@ -1,7 +1,7 @@
 <!-- /create -->
 <script lang="ts">
     import CosmicDetails from '$lib/cosmic/Details.svelte';
-	import { isCosmicValid, newCosmic } from "$lib/schemas";
+	import { isCosmicValid, newCosmic } from "$lib/cosmic/schemas";
 
     let cosmic = newCosmic();
 
@@ -12,6 +12,6 @@
 <form method="POST">
     <CosmicDetails bind:cosmic={cosmic} />
     <br />
-    <a class="btn" href="/">Cancel</a>
+    <a class="btn" href="/cosmic">Cancel</a>
     <button type="submit" class="btn" disabled={!enableSubmit}>Create</button>
 </form>

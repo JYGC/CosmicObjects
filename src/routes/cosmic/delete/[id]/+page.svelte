@@ -8,6 +8,6 @@
 <p><b>Are you sure you what to delete this object?</b></p>
 <form method="POST">
     <input type="hidden" name="id" value="{id}" />
-    <a class="btn" href="/">No</a>
+    <a class="btn" href="/cosmic">No</a>
     <button type="submit" class="btn">Yes</button>
 </form>

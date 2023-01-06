@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { newCosmic } from "$lib/schemas";
-	import type { Cosmic } from "$lib/schemas";
+	import { newCosmic } from "$lib/cosmic/schemas";
+	import type { Cosmic } from "$lib/cosmic/schemas";
 
     export let cosmic: Cosmic = newCosmic();
 </script>

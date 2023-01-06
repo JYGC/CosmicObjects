@@ -1,6 +1,6 @@
-/* /create */
+/* /update */
 
-import type { Actions } from '$/types';
+import type { Actions } from './$types';
 import { redirect } from '@sveltejs/kit';
 
 import { getDatabaseClient } from '$lib/database';
@@ -10,15 +10,15 @@ export const actions: Actions = {
         try {
             let data = await request.formData();
             let name = data.get('name');
-            if (name === null || name.trim().length === 0) return;
+            if (name === null || name.trim().length === 0) throw redirect(300, '/cosmic/update');
             const db = await getDatabaseClient();
-            let record = await db.create('cosmics', {
+            let record = await db.update(data.get('id'), {
                 name: name,
                 type: data.get('type')
             });
-            throw redirect(300, '/');
+            throw redirect(300, '/cosmic/');
         } catch (ex) {
-            throw redirect(300, '/');
+            throw redirect(300, '/cosmic/');
         }
     }
 };

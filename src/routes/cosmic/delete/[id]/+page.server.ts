@@ -10,6 +10,6 @@ export const actions: Actions = {
         let data = await request.formData();
         const db = await getDatabaseClient();
         let record = await db.delete(data.get('id'));
-        throw redirect(300, '/');
+        throw redirect(300, '/cosmic');
     }
 };
