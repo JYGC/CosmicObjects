@@ -1,6 +1,10 @@
 <!-- / -->
 <style lang="scss">
-    thead td {
+    table {
+        margin-top: 20px;
+    }
+
+    thead th {
         font-weight: bold;
     }
 
@@ -32,7 +36,7 @@
                     <td>{name}</td>
                     <td>{type}</td>
                     <td>
-                        <a class="btn" href="/update/{id}">View</a>
+                        <a class="btn" href="/read/{id}">Details</a>
                     </td>
                     <td>
                         <a class="btn" href="/delete/{id}">Delete</a>
