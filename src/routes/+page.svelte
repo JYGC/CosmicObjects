@@ -10,13 +10,13 @@
 </style>
 
 <script lang="ts">
-    import type { CosmicObject } from '$lib/schemas';
-    export let data: { objects: CosmicObject[] };
+    import type { Cosmic } from '$lib/schemas';
+    export let data: { cosmics: Cosmic[] };
 </script>
 
 <h1>Cosmic Objects</h1>
 <a class="btn" href="/create">Create new object</a>
-{#if data.objects !== undefined && data.objects.length > 0}
+{#if data.cosmics !== undefined && data.cosmics.length > 0}
     <table>
         <thead>
             <tr>
@@ -27,7 +27,7 @@
             </tr>
         </thead>
         <tbody>
-            {#each data.objects as {id, name, type}}
+            {#each data.cosmics as {id, name, type}}
                 <tr id="{id}">
                     <td>{name}</td>
                     <td>{type}</td>

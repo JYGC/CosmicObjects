@@ -9,5 +9,5 @@
 <form method="POST">
     <input type="hidden" name="id" value="{id}" />
     <a class="btn" href="/">No</a>
-    <button class="btn">Yes</button>
+    <button type="submit" class="btn">Yes</button>
 </form>

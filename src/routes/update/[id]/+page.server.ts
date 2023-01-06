@@ -8,10 +8,10 @@ import { getDatabaseClient } from '$lib/database';
 export const load = (async (page) => {
     const db = await getDatabaseClient();
     const id = page.params.id;
-    const objects = await db.select(id)
+    const cosmics = await db.select(id)
 
     return {
-        object: objects[0]
+        cosmic: cosmics[0]
     }
 }) satisfies PageServerLoad;
 

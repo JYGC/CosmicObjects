@@ -4,6 +4,6 @@ import { getDatabaseClient } from '$lib/database';
 
 export const load = (async () => {
     const db = await getDatabaseClient();
-    const objects = db.select('objects');
-    return { objects };
+    const cosmics = db.select('cosmics');
+    return { cosmics };
 }) satisfies PageServerLoad;

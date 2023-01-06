@@ -1,14 +1,12 @@
 <!-- /create -->
+<script lang="ts">
+    import CosmicDetails from '$lib/cosmic/CosmicDetails.svelte';
+</script>
+
 <h1>Add cosmic object</h1>
 <form method="POST">
-    <label>
-        Name<br />
-        <input name="name" type="text" />
-    </label><br />
-    <label>
-        Type<br />
-        <input name="type" type="text" />
-    </label><br /><br />
+    <CosmicDetails />
+    <br />
     <a class="btn" href="/">Cancel</a>
-    <button class="btn">Create</button>
+    <button type="submit" class="btn">Create</button>
 </form>
