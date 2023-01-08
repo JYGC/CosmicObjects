@@ -31,10 +31,10 @@
             </tr>
         </thead>
         <tbody>
-            {#each data.cosmics as {id, name, type}}
+            {#each data.cosmics as {id, name, cosmicType}}
                 <tr id="{id}">
                     <td>{name}</td>
-                    <td>{type}</td>
+                    <td>{cosmicType}</td>
                     <td>
                         <a class="btn" href="/cosmic/read/{id}">Details</a>
                     </td>
