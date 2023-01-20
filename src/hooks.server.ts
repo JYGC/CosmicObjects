@@ -1,15 +1,15 @@
 import defaultCosimcTypes from '$lib/cosmictype/default-data';
-import { cosmicTypeTableName, type CosmicType } from '$lib/cosmictype/schemas';
+import { cosmicTypeTableName } from '$lib/cosmictype/schemas';
 import { getDatabaseClient } from '$lib/database';
 
 async function addDefaultData()
 {
     const db = await getDatabaseClient();
     for (let i = 0; i < defaultCosimcTypes.length; i++) {
-        let queryReturn: [{ result: [{ id: string }] }] = await db.query(`SELECT * FROM ${cosmicTypeTableName} WHERE name = $name`, {
+        const queryReturn: [{ result: [{ id: string }] }] = await db.query(`SELECT * FROM ${cosmicTypeTableName} WHERE name = $name`, {
             name: defaultCosimcTypes[i].name
         });
-        let inboundDCosmicTypeData = {
+        const inboundDCosmicTypeData = {
             name: defaultCosimcTypes[i].name,
             description: defaultCosimcTypes[i].description
         };

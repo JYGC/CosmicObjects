@@ -3,7 +3,6 @@
 	import { newCosmic } from "$lib/cosmic/schemas";
 	import type { Cosmic } from "$lib/cosmic/schemas";
 	import type { CosmicType } from '$lib/cosmictype/schemas';
-	import { error } from '@sveltejs/kit';
 
     export let cosmic: Cosmic = newCosmic();
 

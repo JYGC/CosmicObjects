@@ -12,7 +12,7 @@ export function newCosmic(): Cosmic {
     };
 }
 
-export function isCosmicValid(cosmic: Cosmic): Boolean {
+export function isCosmicValid(cosmic: Cosmic): boolean {
     return (typeof cosmic.name !== "undefined") && cosmic.name !== null && cosmic.name.trim().length > 0;
 }
 
