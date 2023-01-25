@@ -6,7 +6,7 @@ export interface CosmicDTO {
     cosmicType: string
 }
 
-export function newCosmic(): CosmicDTO {
+export function newCosmicDTO(): CosmicDTO {
     return {
         id: "",
         name: "",
@@ -14,7 +14,7 @@ export function newCosmic(): CosmicDTO {
     };
 }
 
-export function isCosmicValid(cosmic: CosmicDTO): boolean {
+export function isCosmicDTOValid(cosmic: CosmicDTO): boolean {
     return typeof cosmic.name !== "undefined" && cosmic.name !== null && cosmic.name.trim().length > 0 &&
             typeof cosmic.cosmicType !== "undefined" && cosmicTypesFromCache.some(ct => ct.id === cosmic.cosmicType);
 }

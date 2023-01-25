@@ -4,7 +4,7 @@ export interface CosmicTypeDTO {
     description: string
 }
 
-export function newCosmicType (name: string, description: string): CosmicTypeDTO {
+export function newCosmicTypeDTO (name: string, description: string): CosmicTypeDTO {
     return {
         id: "",
         name: name,

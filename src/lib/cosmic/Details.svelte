@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { newCosmic } from "$lib/cosmic/dtos";
-	import type { CosmicDTO } from "$lib/cosmic/dtos";
+	import { newCosmicDTO, type CosmicDTO } from "$lib/cosmic/dtos";
 	import { cosmicTypesFromCache } from '$lib/cosmictype/cache';
 
-    export let cosmic: CosmicDTO = newCosmic();
+    export let cosmic: CosmicDTO = newCosmicDTO();
 </script>
 
 <label>

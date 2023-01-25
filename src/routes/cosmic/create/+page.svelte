@@ -1,11 +1,11 @@
 <!-- /create -->
 <script lang="ts">
     import CosmicDetails from '$lib/cosmic/Details.svelte';
-	import { isCosmicValid, newCosmic } from "$lib/cosmic/dtos";
+	import { isCosmicDTOValid, newCosmicDTO } from "$lib/cosmic/dtos";
 
-    let cosmic = newCosmic();
+    let cosmic = newCosmicDTO();
 
-    $: enableSubmit = isCosmicValid(cosmic);
+    $: enableSubmit = isCosmicDTOValid(cosmic);
 </script>
 
 <h1>Add cosmic object</h1>

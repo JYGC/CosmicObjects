@@ -1,15 +1,14 @@
 <!-- /read -->
 <script lang="ts">
     import { page } from '$app/stores';
-    import type { CosmicDTO } from '$lib/cosmic/dtos';
-    import  { isCosmicValid } from '$lib/cosmic/dtos';
+    import  { isCosmicDTOValid, type CosmicDTO } from '$lib/cosmic/dtos';
     import CosmicDetails from '$lib/cosmic/Details.svelte';
     const id = $page.params.id;
 
     export let data: { cosmic: CosmicDTO };
     let cosmic = data.cosmic;
 
-    $: enableSubmit = isCosmicValid(cosmic);
+    $: enableSubmit = isCosmicDTOValid(cosmic);
 </script>
 
 <h1>Read or Update cosmic object</h1>

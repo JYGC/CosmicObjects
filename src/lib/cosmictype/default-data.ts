@@ -1,8 +1,8 @@
-import { newCosmicType } from "./dtos";
+import { newCosmicTypeDTO } from "./dtos";
 
 export default [
-    newCosmicType("Star", "Mass of gas with hydrogen fusion at center"),
-    newCosmicType("Planet", "Object orbiting stars with no fusion"),
-    newCosmicType("Nebula", "Gas clouds forming stars"),
-    newCosmicType("Galaxy", "Large collections of stars")
+    newCosmicTypeDTO("Star", "Mass of gas with hydrogen fusion at center"),
+    newCosmicTypeDTO("Planet", "Object orbiting stars with no fusion"),
+    newCosmicTypeDTO("Nebula", "Gas clouds forming stars"),
+    newCosmicTypeDTO("Galaxy", "Large collections of stars")
 ];
