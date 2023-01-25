@@ -1,4 +1,4 @@
-import type { PageServerLoad } from '../$types';
+import type { PageServerLoad } from './$types';
 
 import { getDatabaseClient } from '$lib/database';
 

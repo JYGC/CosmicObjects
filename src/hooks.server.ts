@@ -1,5 +1,5 @@
 import defaultCosimcTypes from '$lib/cosmictype/default-data';
-import { cosmicTypeTableName } from '$lib/cosmictype/schemas';
+import { cosmicTypeTableName } from '$lib/cosmictype/dtos';
 import { getDatabaseClient } from '$lib/database';
 
 async function addDefaultData()

@@ -1,7 +1,7 @@
 <!-- /create -->
 <script lang="ts">
     import CosmicDetails from '$lib/cosmic/Details.svelte';
-	import { isCosmicValid, newCosmic } from "$lib/cosmic/schemas";
+	import { isCosmicValid, newCosmic } from "$lib/cosmic/dtos";
 
     let cosmic = newCosmic();
 

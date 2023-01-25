@@ -1,4 +1,4 @@
-import { newCosmicType } from "./schemas";
+import { newCosmicType } from "./dtos";
 
 export default [
     newCosmicType("Star", "Mass of gas with hydrogen fusion at center"),

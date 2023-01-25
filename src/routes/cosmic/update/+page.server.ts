@@ -8,17 +8,20 @@ import { getDatabaseClient } from '$lib/database';
 export const actions: Actions = {
     default: async ({ request }) => {
         try {
-            let data = await request.formData();
-            let name = data.get('name');
-            if (name === null || name.trim().length === 0) throw redirect(300, '/cosmic/update');
+            const data = await request.formData();
+            const name = data.get('name');
+            const id = data.get('id');
+            if (id === null || id.toString().trim().length === 0 || name === null ||
+                name.toString().trim().length === 0) throw redirect(300, '/cosmic/read');
             const db = await getDatabaseClient();
-            let record = await db.update(data.get('id'), {
+            await db.update(id.toString(), {
                 name: name,
-                type: data.get('type')
+                cosmicType: data.get('cosmicType')
             });
-            throw redirect(300, '/cosmic/');
         } catch (ex) {
-            throw redirect(300, '/cosmic/');
+            console.log(ex);
+            throw redirect(300, '/cosmic/update');
         }
+        throw redirect(300, '/cosmic/');
     }
 };

@@ -14,8 +14,8 @@
 </style>
 
 <script lang="ts">
-    import type { Cosmic } from '$lib/cosmic/schemas';
-    export let data: { cosmics: Cosmic[] };
+    import type { CosmicDTO } from '$lib/cosmic/dtos';
+    export let data: { cosmics: CosmicDTO[] };
 </script>
 
 <h1>Cosmic Objects</h1>

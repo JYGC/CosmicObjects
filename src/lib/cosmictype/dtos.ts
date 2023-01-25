@@ -1,10 +1,10 @@
-export interface CosmicType {
+export interface CosmicTypeDTO {
     id: string
     name: string
     description: string
 }
 
-export function newCosmicType (name: string, description: string): CosmicType {
+export function newCosmicType (name: string, description: string): CosmicTypeDTO {
     return {
         id: "",
         name: name,
