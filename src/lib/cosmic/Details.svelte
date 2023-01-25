@@ -13,7 +13,7 @@
     Type<br />
     <select name="cosmicType" bind:value="{cosmic.cosmicType}">
         <option value="">-- Select cosmic type --</option>
-        {#each cosmicTypesFromCache as {id, name}}
+        {#each cosmicTypesFromCache as {id, name} (id)}
             <option value={id}>{name}</option>
         {/each}
     </select>

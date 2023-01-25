@@ -31,7 +31,7 @@
             </tr>
         </thead>
         <tbody>
-            {#each data.cosmics as {id, name, cosmicType}}
+            {#each data.cosmics as {id, name, cosmicType} (id)}
                 <tr id="{id}">
                     <td>{name}</td>
                     <td>{cosmicType}</td>
