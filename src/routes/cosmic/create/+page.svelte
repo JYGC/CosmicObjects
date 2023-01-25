@@ -1,6 +1,6 @@
 <!-- /create -->
 <script lang="ts">
-    import CosmicDetails from '$lib/cosmic/Details.svelte';
+    import CosmicDetails from '$lib/cosmic/components/Details.svelte';
 	import { isCosmicDTOValid, newCosmicDTO } from "$lib/cosmic/dtos";
 
     let cosmic = newCosmicDTO();

@@ -2,7 +2,7 @@
 <script lang="ts">
     import { page } from '$app/stores';
     import  { isCosmicDTOValid, type CosmicDTO } from '$lib/cosmic/dtos';
-    import CosmicDetails from '$lib/cosmic/Details.svelte';
+    import CosmicDetails from '$lib/cosmic/components/Details.svelte';
     const id = $page.params.id;
 
     export let data: { cosmic: CosmicDTO };
