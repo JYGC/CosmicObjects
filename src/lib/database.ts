@@ -16,4 +16,4 @@ export const getDatabaseClient = async () => {
     await db.use('namespace', 'basicsdb');
 
     return db;
-}
+};

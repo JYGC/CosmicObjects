@@ -4,4 +4,4 @@ import { getDatabaseClient } from '$lib/database';
 export const getAllCosmicTypes = async (): Promise<CosmicTypeDTO[]> => {
     const db = await getDatabaseClient();
     return await db.select(cosmicTypeTableName);
-}
+};

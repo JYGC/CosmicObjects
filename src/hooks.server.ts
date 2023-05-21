@@ -18,6 +18,6 @@ const addDefaultData = async () => {
             await db.create(cosmicTypeTableName, inboundDCosmicTypeData);
         }
     }
-}
+};
 
 addDefaultData();

@@ -3,4 +3,4 @@ import type { PageServerLoad } from "./$types";
 
 export const load = (async () => {
     throw redirect(302, '/cosmic');
-}) satisfies PageServerLoad
+}) satisfies PageServerLoad;
