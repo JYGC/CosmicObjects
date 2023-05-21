@@ -16,6 +16,6 @@ export const actions: Actions = {
         } catch (ex) {
             throw redirect(300, '/cosmic');
         }
-        throw redirect(300, '/cosmic');
+        throw redirect(303, '/cosmic');
     }
 };

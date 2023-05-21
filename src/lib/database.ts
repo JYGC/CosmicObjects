@@ -5,7 +5,7 @@ const dbURL = 'http://localhost:8000/rpc';
 const dbUser = 'root';
 const dbPass = 'root';
 
-export async function getDatabaseClient() {
+export const getDatabaseClient = async () => {
     const db = new Surreal(dbURL);
 
     await db.signin({

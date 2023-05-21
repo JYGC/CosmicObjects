@@ -22,6 +22,6 @@ export const actions: Actions = {
             console.log(ex);
             throw redirect(300, '/cosmic/update');
         }
-        throw redirect(300, '/cosmic/');
+        throw redirect(303, '/cosmic/');
     }
 };
